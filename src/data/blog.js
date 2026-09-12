@@ -1,0 +1,321 @@
+// Genuine educational posts written to actually help readers, not to pad
+// the site with content. No invented statistics, case studies, or client
+// stories: general practical advice only, matching the honesty standard
+// used across the rest of the site.
+
+export const blogPosts = [
+  {
+    slug: 'slow-computer-repair-or-replace',
+    category: 'it-computer',
+    image: 'laptop-repair',
+    date: '2026-07-14',
+    readMinutes: 5,
+    title: {
+      en: 'Slow Computer? How to Tell If It Needs Repair or Replacement',
+      fr: 'Ordinateur lent ? Faut-il le réparer ou le remplacer ?',
+    },
+    excerpt: {
+      en: 'Before you spend money on a new machine, a few checks can tell you whether the one you have can be fixed for far less.',
+      fr: "Avant de dépenser dans un nouvel appareil, quelques vérifications peuvent vous dire si celui que vous avez peut être réparé pour bien moins cher.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "A slow computer is one of the most common complaints we hear, and it's rarely as simple as \"the computer is old.\" Age matters less than what is actually happening inside the machine. Before deciding to replace anything, it's worth understanding what's really slowing you down." },
+        { type: 'h2', text: 'Start with what changed' },
+        { type: 'p', text: "If a computer that used to run fine has suddenly become slow, something changed: a new program running in the background, a drive filling up, overheating from dust buildup, or a malware infection. This kind of slowdown is usually fixable and often cheap to resolve." },
+        { type: 'p', text: "If the machine has always felt slow, or has gradually gotten worse over a year or more with no clear trigger, it's more likely the hardware itself is underpowered for what you're asking it to do." },
+        { type: 'h2', text: 'Signs a repair is likely enough' },
+        { type: 'ul', items: [
+          'The computer takes long to start but runs acceptably once everything has loaded.',
+          'Fans run loudly or the case feels hot even for light tasks.',
+          'Storage space is almost full.',
+          'Pop-ups, unfamiliar toolbars, or unexpected browser redirects appear.',
+          'It was fast a few months ago and slowed down without a clear reason.',
+        ]},
+        { type: 'p', text: 'These are usually symptoms of dust buildup, a nearly-full drive, background bloatware, or malware, all of which can be cleaned up or optimized without buying anything new.' },
+        { type: 'h2', text: 'Signs replacement is the more honest answer' },
+        { type: 'ul', items: [
+          'The machine struggles even with a single browser tab or basic word processing open.',
+          'It is more than 7 to 8 years old and already had a hard drive or RAM upgrade.',
+          'The operating system it runs can no longer receive security updates.',
+          'Repairs would cost close to, or more than, a replacement machine.',
+        ]},
+        { type: 'p', text: "We'll always tell you honestly which category your situation falls into rather than pushing a repair (or a sale) that doesn't make sense for you. A diagnostic visit is the fastest way to know for sure." },
+      ],
+      fr: [
+        { type: 'p', text: "Un ordinateur lent est l'une des plaintes les plus courantes que nous recevons, et ce n'est presque jamais aussi simple que « l'ordinateur est vieux ». L'âge compte moins que ce qui se passe réellement à l'intérieur de la machine. Avant de décider de remplacer quoi que ce soit, il vaut la peine de comprendre ce qui vous ralentit vraiment." },
+        { type: 'h2', text: 'Commencez par ce qui a changé' },
+        { type: 'p', text: "Si un ordinateur qui fonctionnait bien est soudainement devenu lent, quelque chose a changé : un nouveau programme qui tourne en arrière-plan, un disque presque plein, une surchauffe due à la poussière, ou une infection par un logiciel malveillant. Ce type de ralentissement est généralement réparable et souvent peu coûteux à résoudre." },
+        { type: 'p', text: "Si la machine a toujours semblé lente, ou s'est progressivement dégradée sur un an ou plus sans déclencheur clair, il est plus probable que le matériel lui-même soit insuffisant pour ce que vous lui demandez." },
+        { type: 'h2', text: 'Signes qu\u2019une réparation suffit probablement' },
+        { type: 'ul', items: [
+          "L'ordinateur met du temps à démarrer mais fonctionne correctement une fois tout chargé.",
+          "Les ventilateurs sont bruyants ou le boîtier chauffe même pour des tâches légères.",
+          "L'espace de stockage est presque plein.",
+          "Des fenêtres publicitaires, barres d'outils inconnues ou redirections de navigateur inattendues apparaissent.",
+          "L'appareil était rapide il y a quelques mois et a ralenti sans raison claire.",
+        ]},
+        { type: 'p', text: "Ce sont généralement des symptômes d'accumulation de poussière, d'un disque presque plein, de logiciels superflus en arrière-plan, ou de logiciels malveillants, tous corrigeables sans rien acheter de nouveau." },
+        { type: 'h2', text: 'Signes que le remplacement est la réponse la plus honnête' },
+        { type: 'ul', items: [
+          "La machine peine même avec un seul onglet de navigateur ou un traitement de texte basique ouvert.",
+          "Elle a plus de 7 à 8 ans et a déjà eu une mise à niveau du disque dur ou de la RAM.",
+          "Le système d'exploitation qu'elle utilise ne reçoit plus de mises à jour de sécurité.",
+          "Les réparations coûteraient presque autant, ou plus, qu'une machine de remplacement.",
+        ]},
+        { type: 'p', text: "Nous vous dirons toujours honnêtement dans quelle catégorie se trouve votre situation, plutôt que de pousser une réparation (ou une vente) qui n'a pas de sens pour vous. Une visite de diagnostic reste le moyen le plus rapide d'en être sûr." },
+      ],
+    },
+  },
+  {
+    slug: 'wifi-not-reaching-every-room',
+    category: 'networking-security',
+    image: 'router-networking',
+    date: '2026-07-21',
+    readMinutes: 4,
+    title: {
+      en: "Why Your Wi-Fi Doesn't Reach Every Room, and What Actually Fixes It",
+      fr: "Pourquoi votre Wi-Fi n'atteint pas toutes les pièces, et ce qui le résout vraiment",
+    },
+    excerpt: {
+      en: 'Weak Wi-Fi in the back room usually isn\u2019t your internet plan\u2019s fault. It\u2019s almost always about where the signal has to travel through.',
+      fr: "Un Wi-Fi faible dans une pièce éloignée n'est presque jamais la faute de votre forfait internet. C'est presque toujours une question d'obstacles sur le trajet du signal.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "\"My internet is slow\" and \"my Wi-Fi doesn't reach\" are two different problems, and mixing them up leads to the wrong fix. Your internet plan controls how much data can come into the building. Your router and its placement control how well that signal spreads once it's inside." },
+        { type: 'h2', text: 'What actually blocks a Wi-Fi signal' },
+        { type: 'ul', items: [
+          'Concrete and brick walls, which absorb far more signal than drywall.',
+          'Metal objects and mirrors, including refrigerators and metal roofing.',
+          'Distance combined with walls: each obstacle compounds the signal loss.',
+          'A router placed in a corner, cupboard, or low on the floor instead of centrally and elevated.',
+          'Interference from neighboring Wi-Fi networks on the same channel, common in dense housing.',
+        ]},
+        { type: 'h2', text: 'What actually helps' },
+        { type: 'p', text: "Moving the router to a central, elevated, open location often does more than any equipment upgrade. Beyond that, the right fix depends on the size and layout of the space." },
+        { type: 'ul', items: [
+          'A single router is often enough for a small apartment or single-floor home.',
+          'A mesh Wi-Fi system works well for larger homes or homes with thick interior walls, since multiple units share coverage instead of one router straining to reach everywhere.',
+          'A wired access point is the most reliable option for a separate building, like a boys\u2019 quarters or a detached office, since it doesn\u2019t rely on Wi-Fi punching through walls at all.',
+        ]},
+        { type: 'p', text: "Before buying anything, it's worth having someone actually walk the property and check signal strength room by room. That's usually enough to tell you whether you need a better router placement, a second access point, or a full mesh setup, rather than guessing and buying the wrong thing." },
+      ],
+      fr: [
+        { type: 'p', text: "« Mon internet est lent » et « mon Wi-Fi n'atteint pas » sont deux problèmes différents, et les confondre mène à la mauvaise solution. Votre forfait internet détermine combien de données peuvent entrer dans le bâtiment. Votre routeur et son emplacement déterminent à quel point ce signal se propage une fois à l'intérieur." },
+        { type: 'h2', text: 'Ce qui bloque vraiment un signal Wi-Fi' },
+        { type: 'ul', items: [
+          "Les murs en béton et en brique, qui absorbent bien plus le signal que le placo.",
+          "Les objets métalliques et les miroirs, y compris les réfrigérateurs et les toitures en tôle.",
+          "La distance combinée aux murs : chaque obstacle amplifie la perte de signal.",
+          "Un routeur placé dans un coin, un placard, ou au sol au lieu d'être central et surélevé.",
+          "Les interférences des réseaux Wi-Fi voisins sur le même canal, fréquentes dans les zones denses.",
+        ]},
+        { type: 'h2', text: 'Ce qui aide vraiment' },
+        { type: 'p', text: "Déplacer le routeur vers un endroit central, surélevé et dégagé fait souvent plus que n'importe quelle mise à niveau matérielle. Au-delà de ça, la bonne solution dépend de la taille et de la disposition de l'espace." },
+        { type: 'ul', items: [
+          "Un seul routeur suffit souvent pour un petit appartement ou une maison à un étage.",
+          "Un système Wi-Fi maillé (mesh) fonctionne bien pour les grandes maisons ou celles aux murs intérieurs épais, car plusieurs unités partagent la couverture au lieu qu'un seul routeur peine à tout couvrir.",
+          "Un point d'accès filaire est l'option la plus fiable pour un bâtiment séparé, comme une dépendance ou un bureau détaché, car il ne dépend pas du tout du Wi-Fi traversant les murs.",
+        ]},
+        { type: 'p', text: "Avant d'acheter quoi que ce soit, il vaut la peine de faire vérifier la force du signal pièce par pièce sur place. Cela suffit généralement à savoir si vous avez besoin d'un meilleur emplacement de routeur, d'un second point d'accès, ou d'un système mesh complet, plutôt que de deviner et d'acheter la mauvaise chose." },
+      ],
+    },
+  },
+  {
+    slug: 'before-you-install-cctv',
+    category: 'cctv-surveillance',
+    image: 'cctv-kit',
+    date: '2026-07-28',
+    readMinutes: 5,
+    title: {
+      en: 'What to Think Through Before Installing CCTV at Home or at Your Shop',
+      fr: 'Ce qu\u2019il faut réfléchir avant d\u2019installer la vidéosurveillance chez vous ou dans votre boutique',
+    },
+    excerpt: {
+      en: 'Camera count matters less than camera placement, power source, and how you plan to actually check the footage.',
+      fr: "Le nombre de caméras compte moins que leur emplacement, la source d'alimentation, et la manière dont vous comptez réellement consulter les images.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "CCTV is one of the most requested installs we do, and the biggest mistake people make is deciding on camera count before thinking about coverage. More cameras isn't automatically better coverage. The right setup starts with a few honest questions." },
+        { type: 'h2', text: 'What are you actually trying to see?' },
+        { type: 'p', text: "Entrances and exits matter more than open yard space. A single well-placed camera covering your main gate and doorway is often more useful than three cameras pointed at areas nobody actually passes through." },
+        { type: 'h2', text: 'Power and connectivity, before cameras' },
+        { type: 'ul', items: [
+          'Where will the NVR (recorder) sit, and is that location secure from tampering or theft?',
+          'Is there a reliable power source at each camera location, or will you need a solar-powered unit for a spot far from wiring?',
+          'Do you want to view footage remotely from your phone? That requires a stable internet connection at the property, not just at the recorder.',
+        ]},
+        { type: 'h2', text: 'Night coverage is often the deciding factor' },
+        { type: 'p', text: "Many break-ins and incidents worth reviewing happen at night. Check that any camera you're considering has real infrared or low-light performance, not just a marketing claim of \"night vision\" that produces a barely-usable grainy image." },
+        { type: 'h2', text: 'Maintenance is part of the job, not an afterthought' },
+        { type: 'p', text: "Lenses collect dust and cobwebs, storage drives fill up and need to be checked, and cabling can be affected by rain or rodents. A CCTV system that's installed and never checked again tends to fail exactly when you need it, so plan for occasional maintenance from the start." },
+      ],
+      fr: [
+        { type: 'p', text: "La vidéosurveillance est l'une des installations les plus demandées, et la plus grande erreur est de décider du nombre de caméras avant de réfléchir à la couverture. Plus de caméras n'est pas automatiquement une meilleure couverture. La bonne installation commence par quelques questions honnêtes." },
+        { type: 'h2', text: 'Que cherchez-vous vraiment à voir ?' },
+        { type: 'p', text: "Les entrées et sorties comptent plus que l'espace ouvert de la cour. Une seule caméra bien placée couvrant votre portail principal et votre porte d'entrée est souvent plus utile que trois caméras pointées vers des zones que personne ne traverse réellement." },
+        { type: 'h2', text: 'Alimentation et connectivité, avant les caméras' },
+        { type: 'ul', items: [
+          "Où sera placé le NVR (enregistreur), et cet endroit est-il sécurisé contre le vol ou le sabotage ?",
+          "Y a-t-il une source d'alimentation fiable à chaque emplacement de caméra, ou faudra-t-il une unité solaire pour un endroit éloigné du câblage ?",
+          "Voulez-vous consulter les images à distance depuis votre téléphone ? Cela nécessite une connexion internet stable sur place, pas seulement au niveau de l'enregistreur.",
+        ]},
+        { type: 'h2', text: 'La couverture nocturne est souvent déterminante' },
+        { type: 'p', text: "De nombreux incidents qui méritent d'être revus se produisent la nuit. Vérifiez que toute caméra envisagée a une vraie performance infrarouge ou en faible luminosité, et pas seulement un argument marketing de « vision nocturne » qui produit une image granuleuse à peine utilisable." },
+        { type: 'h2', text: "L'entretien fait partie du travail, pas une réflexion après coup" },
+        { type: 'p', text: "Les objectifs accumulent poussière et toiles d'araignée, les disques de stockage se remplissent et doivent être vérifiés, et le câblage peut être affecté par la pluie ou les rongeurs. Un système de vidéosurveillance installé puis jamais revérifié a tendance à tomber en panne exactement quand vous en avez besoin, prévoyez donc un entretien occasionnel dès le départ." },
+      ],
+    },
+  },
+  {
+    slug: 'is-starlink-right-for-you',
+    category: 'starlink',
+    image: 'starlink-kits',
+    date: '2026-08-04',
+    readMinutes: 4,
+    title: {
+      en: 'Is Starlink Right for You? What to Check Before You Buy',
+      fr: 'Starlink est-il fait pour vous ? Ce qu\u2019il faut vérifier avant d\u2019acheter',
+    },
+    excerpt: {
+      en: 'Starlink solves a specific problem well. It\u2019s worth checking whether that\u2019s actually your problem before spending on it.',
+      fr: "Starlink résout bien un problème précis. Il vaut la peine de vérifier si c'est vraiment votre problème avant d'y investir.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "Starlink has become a popular answer to \"my internet is unreliable,\" and it genuinely solves that problem in a lot of situations, particularly where fiber or stable 4G coverage doesn't reach. But it's not automatically the right tool for every connectivity problem." },
+        { type: 'h2', text: 'Starlink is a strong fit when' },
+        { type: 'ul', items: [
+          'You\u2019re in an area with weak or unreliable fiber and mobile data coverage.',
+          'You need internet at a location off the existing grid or far from infrastructure.',
+          'Your current connection frequently drops during rain or peak hours.',
+          'You have a clear, unobstructed view of the sky where the dish would sit.',
+        ]},
+        { type: 'h2', text: 'Starlink may not be the right fit when' },
+        { type: 'ul', items: [
+          'Your actual problem is Wi-Fi coverage inside the building, not the internet connection itself. A stronger router or a mesh system solves that far more cheaply.',
+          'The install location is surrounded by tall trees or buildings that block sky view in most directions.',
+          'You mainly need connectivity for light browsing and messaging, where a good local ISP or mobile data plan may already be enough.',
+        ]},
+        { type: 'h2', text: 'What the install actually involves' },
+        { type: 'p', text: "Beyond mounting the dish, a proper Starlink setup includes finding true sky clearance (not just a spot that looks open), running cable to the router, and distributing Wi-Fi from that router through the rest of the building, which often needs its own planning if the property is large or has thick walls." },
+        { type: 'p', text: "If you're not sure which category you fall into, it's worth having someone check your specific site and existing connection before you commit to buying a kit." },
+      ],
+      fr: [
+        { type: 'p', text: "Starlink est devenu une réponse populaire au problème « mon internet n'est pas fiable », et il résout vraiment ce problème dans beaucoup de situations, en particulier là où la fibre ou une couverture 4G stable n'arrive pas. Mais ce n'est pas automatiquement le bon outil pour tout problème de connectivité." },
+        { type: 'h2', text: 'Starlink est un bon choix si' },
+        { type: 'ul', items: [
+          "Vous êtes dans une zone avec une couverture fibre ou mobile faible ou peu fiable.",
+          "Vous avez besoin d'internet à un endroit hors réseau ou loin des infrastructures.",
+          "Votre connexion actuelle coupe souvent pendant la pluie ou aux heures de pointe.",
+          "Vous avez une vue dégagée sur le ciel à l'endroit où l'antenne serait installée.",
+        ]},
+        { type: 'h2', text: "Starlink n'est peut-être pas le bon choix si" },
+        { type: 'p', text: "Votre vrai problème est la couverture Wi-Fi à l'intérieur du bâtiment, pas la connexion internet elle-même. Un routeur plus puissant ou un système mesh résout cela bien moins cher." },
+        { type: 'ul', items: [
+          "L'emplacement d'installation est entouré de grands arbres ou bâtiments qui bloquent la vue du ciel dans la plupart des directions.",
+          "Vous avez surtout besoin de connectivité pour de la navigation légère et de la messagerie, où un bon fournisseur local ou un forfait de données mobiles peut déjà suffire.",
+        ]},
+        { type: 'h2', text: "Ce que l'installation implique réellement" },
+        { type: 'p', text: "Au-delà du montage de l'antenne, une installation Starlink correcte inclut de trouver un vrai dégagement du ciel (pas juste un endroit qui semble ouvert), de tirer le câble jusqu'au routeur, et de distribuer le Wi-Fi depuis ce routeur dans le reste du bâtiment, ce qui nécessite souvent sa propre planification si la propriété est grande ou a des murs épais." },
+        { type: 'p', text: "Si vous n'êtes pas sûr de votre situation, il vaut la peine de faire vérifier votre site précis et votre connexion actuelle avant de vous engager à acheter un kit." },
+      ],
+    },
+  },
+  {
+    slug: 'sizing-a-solar-system',
+    category: 'solar',
+    image: 'solar-street-light',
+    date: '2026-08-11',
+    readMinutes: 5,
+    title: {
+      en: 'How to Size a Solar System for What You Actually Need to Run',
+      fr: 'Comment dimensionner un système solaire selon vos besoins réels',
+    },
+    excerpt: {
+      en: 'The most common solar mistake is buying based on budget first and appliances second. It should be the other way around.',
+      fr: "L'erreur la plus courante en solaire est d'acheter d'abord selon le budget, puis les appareils. Cela devrait être l'inverse.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "A solar system that's undersized for what you actually run will disappoint you within weeks: batteries drained by midday, inverters tripping, appliances that won't start. A system that's oversized wastes money you didn't need to spend. Getting the size right starts with a simple exercise most people skip." },
+        { type: 'h2', text: 'List what actually needs to run, and for how long' },
+        { type: 'p', text: "Walk through your space and list every device you want powered during an outage: lights, a fridge, a router, fans, a TV, a laptop charger. For each one, note its approximate wattage (usually printed on the device or its charger) and how many hours a day it actually runs." },
+        { type: 'h2', text: 'Separate "nice to have" from "must run"' },
+        { type: 'p', text: "A fridge running continuously has very different power needs than lights you only need for a few hours in the evening. Being honest about what must stay on during an outage versus what can wait keeps the system size, and the cost, realistic." },
+        { type: 'h2', text: 'Three things that get overlooked' },
+        { type: 'ul', items: [
+          'Starting wattage: some appliances, especially fridges and pumps with motors, briefly draw much more power when switching on than while running. Undersizing for this causes the system to trip.',
+          'Cloudy season performance: a system sized only for the sunniest days will underperform for a stretch of the year. Sizing with a buffer matters more than it seems.',
+          'Battery lifespan and depth of discharge: cheaper batteries that are drained fully every night wear out far faster than ones sized to only use part of their capacity.',
+        ]},
+        { type: 'h2', text: 'The honest bottom line' },
+        { type: 'p', text: "There's no universal \"good size\" system. The right setup depends entirely on your actual appliance list, your budget, and how much runtime you need during an outage. A proper sizing conversation before installation saves you from both an underpowered system and an overpriced one." },
+      ],
+      fr: [
+        { type: 'p', text: "Un système solaire sous-dimensionné par rapport à ce que vous utilisez réellement vous décevra en quelques semaines : batteries vidées avant midi, onduleurs qui se coupent, appareils qui ne démarrent pas. Un système surdimensionné gaspille de l'argent que vous n'aviez pas besoin de dépenser. Bien dimensionner commence par un exercice simple que la plupart des gens sautent." },
+        { type: 'h2', text: 'Listez ce qui doit vraiment fonctionner, et pendant combien de temps' },
+        { type: 'p', text: "Parcourez votre espace et listez chaque appareil que vous voulez alimenter pendant une coupure : lumières, réfrigérateur, routeur, ventilateurs, télévision, chargeur d'ordinateur portable. Pour chacun, notez sa puissance approximative (généralement indiquée sur l'appareil ou son chargeur) et le nombre d'heures par jour où il fonctionne réellement." },
+        { type: 'h2', text: 'Séparez le « souhaitable » de « l\u2019indispensable »' },
+        { type: 'p', text: "Un réfrigérateur qui tourne en continu a des besoins en énergie très différents de lumières dont vous n'avez besoin que quelques heures le soir. Être honnête sur ce qui doit absolument rester allumé pendant une coupure par rapport à ce qui peut attendre garde la taille du système, et son coût, réalistes." },
+        { type: 'h2', text: 'Trois choses souvent négligées' },
+        { type: 'ul', items: [
+          "La puissance de démarrage : certains appareils, en particulier les réfrigérateurs et pompes à moteur, consomment brièvement bien plus au démarrage qu'en fonctionnement. Ne pas en tenir compte fait disjoncter le système.",
+          "La performance en saison nuageuse : un système dimensionné seulement pour les jours les plus ensoleillés sera insuffisant pendant une partie de l'année. Prévoir une marge compte plus qu'il n'y paraît.",
+          "La durée de vie des batteries et la profondeur de décharge : des batteries moins chères vidées complètement chaque nuit s'usent bien plus vite que celles dimensionnées pour n'utiliser qu'une partie de leur capacité.",
+        ]},
+        { type: 'h2', text: 'Le constat honnête' },
+        { type: 'p', text: "Il n'existe pas de « bonne taille » universelle de système. La bonne installation dépend entièrement de votre liste réelle d'appareils, de votre budget, et de l'autonomie dont vous avez besoin pendant une coupure. Une vraie discussion de dimensionnement avant l'installation vous évite à la fois un système sous-dimensionné et un système trop cher." },
+      ],
+    },
+  },
+  {
+    slug: 'why-your-small-business-needs-a-website',
+    category: 'web-digital',
+    image: 'webdev-dental-demo-1',
+    date: '2026-08-18',
+    readMinutes: 4,
+    title: {
+      en: 'Why Even a Simple Website Helps a Small Business in Cameroon',
+      fr: 'Pourquoi même un site simple aide une petite entreprise au Cameroun',
+    },
+    excerpt: {
+      en: 'A website doesn\u2019t need to be complex to be useful. It needs to answer the three questions every new customer actually has.',
+      fr: "Un site web n'a pas besoin d'être complexe pour être utile. Il doit répondre aux trois questions que se pose vraiment chaque nouveau client.",
+    },
+    content: {
+      en: [
+        { type: 'p', text: "Many small businesses assume a website is only worth building once they're already big, and rely on WhatsApp status updates and word of mouth in the meantime. That works, but it puts a ceiling on how many new customers can find you, especially ones who don't already know someone who's used your service." },
+        { type: 'h2', text: 'What a website actually needs to do' },
+        { type: 'p', text: "It doesn't need to be flashy. It needs to quickly answer what a stranger searching for your service wants to know: what you do, whether you serve their area, and how to reach you. A single well-built page that does those three things clearly is more useful than a complicated site that takes forever to load." },
+        { type: 'h2', text: 'A few concrete advantages over social media alone' },
+        { type: 'ul', items: [
+          'It shows up in search results when someone looks for your kind of business, not just to people already following your page.',
+          'It works as a permanent, organized reference: services, prices if you want to list them, and contact details, instead of scrolling through old posts.',
+          'It looks more credible to a new customer deciding between you and a competitor, especially for larger jobs where trust matters.',
+          'You control it entirely. A social media platform can change its rules or reach at any time; your own site doesn\u2019t depend on that.',
+        ]},
+        { type: 'h2', text: 'It doesn\u2019t replace WhatsApp and social pages' },
+        { type: 'p', text: "The most effective setup usually combines a simple website with the social channels you already use, each pointing to the other, rather than treating them as competing options." },
+      ],
+      fr: [
+        { type: 'p', text: "Beaucoup de petites entreprises pensent qu'un site web ne vaut la peine d'être construit qu'une fois qu'elles sont déjà grandes, et comptent en attendant sur les statuts WhatsApp et le bouche-à-oreille. Cela fonctionne, mais cela plafonne le nombre de nouveaux clients qui peuvent vous trouver, surtout ceux qui ne connaissent pas déjà quelqu'un ayant utilisé votre service." },
+        { type: 'h2', text: 'Ce qu\u2019un site web doit vraiment faire' },
+        { type: 'p', text: "Il n'a pas besoin d'être tape-à-l'œil. Il doit répondre rapidement à ce qu'un inconnu qui cherche votre type de service veut savoir : ce que vous faites, si vous desservez sa zone, et comment vous joindre. Une seule page bien conçue qui fait clairement ces trois choses est plus utile qu'un site compliqué qui met une éternité à charger." },
+        { type: 'h2', text: "Quelques avantages concrets par rapport aux réseaux sociaux seuls" },
+        { type: 'ul', items: [
+          "Il apparaît dans les résultats de recherche quand quelqu'un cherche votre type d'activité, pas seulement auprès des personnes qui suivent déjà votre page.",
+          "Il sert de référence permanente et organisée : services, prix si vous voulez les indiquer, et coordonnées, au lieu de faire défiler d'anciennes publications.",
+          "Il paraît plus crédible à un nouveau client qui hésite entre vous et un concurrent, surtout pour des travaux plus importants où la confiance compte.",
+          "Vous le contrôlez entièrement. Une plateforme sociale peut changer ses règles ou sa portée à tout moment ; votre propre site n'en dépend pas.",
+        ]},
+        { type: 'h2', text: 'Il ne remplace pas WhatsApp et les pages sociales' },
+        { type: 'p', text: "L'installation la plus efficace combine généralement un site simple avec les canaux sociaux que vous utilisez déjà, chacun renvoyant vers l'autre, plutôt que de les traiter comme des options concurrentes." },
+      ],
+    },
+  },
+]
+
+export const getPostBySlug = (slug) => blogPosts.find((p) => p.slug === slug)

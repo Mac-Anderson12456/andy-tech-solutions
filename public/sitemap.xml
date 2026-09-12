@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.example.com/</loc></url>
+  <url><loc>https://www.example.com/services</loc></url>
+  <url><loc>https://www.example.com/about</loc></url>
+  <url><loc>https://www.example.com/projects</loc></url>
+  <url><loc>https://www.example.com/blog</loc></url>
+  <url><loc>https://www.example.com/blog/slow-computer-repair-or-replace</loc></url>
+  <url><loc>https://www.example.com/blog/wifi-not-reaching-every-room</loc></url>
+  <url><loc>https://www.example.com/blog/before-you-install-cctv</loc></url>
+  <url><loc>https://www.example.com/blog/is-starlink-right-for-you</loc></url>
+  <url><loc>https://www.example.com/blog/sizing-a-solar-system</loc></url>
+  <url><loc>https://www.example.com/blog/why-your-small-business-needs-a-website</loc></url>
+  <url><loc>https://www.example.com/contact</loc></url>
+</urlset>

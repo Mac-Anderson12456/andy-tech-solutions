@@ -1,0 +1,82 @@
+/* Self-hosted fonts (no external runtime fetch — faster and more reliable
+   on constrained connections than pulling from fonts.googleapis.com). */
+/* "latin" subset only — covers English + French accented characters
+   (é, è, à, ç, ü, etc.), which is what Cameroon's bilingual audience needs,
+   without pulling in Vietnamese/Central-European glyphs we don't use. */
+@import "@fontsource/space-grotesk/latin-500.css";
+@import "@fontsource/space-grotesk/latin-600.css";
+@import "@fontsource/space-grotesk/latin-700.css";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/inter/latin-700.css";
+@import "@fontsource/jetbrains-mono/latin-400.css";
+@import "@fontsource/jetbrains-mono/latin-500.css";
+@import "@fontsource/jetbrains-mono/latin-600.css";
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1220;
+  --color-ink-soft: #16213a;
+  --color-paper: #f2f4f2;
+  --color-paper-dim: #e7e9e6;
+  --color-slate: #47536b;
+  --color-slate-light: #7c8797;
+  --color-signal: #16c784;
+  --color-signal-dark: #0b7d4f;
+  --color-volt: #ff7a29;
+  --color-volt-dark: #b3500d;
+  --color-wire: #2f6fed;
+  --color-wire-dark: #1f52c2;
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-volt);
+  color: white;
+}
+
+/* Visible focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-wire);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Network-diagram signature motif line */
+.trace-line {
+  stroke-dasharray: 4 6;
+}
