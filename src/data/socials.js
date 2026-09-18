@@ -1,9 +1,9 @@
 // Fill these in with the real profile URLs. Leave a link out (or set to "")
 // and it will simply not render in the Navbar / Footer social row.
 export const socials = {
-  facebook: '', // e.g. "https://facebook.com/andytechsolutions"
+  facebook: 'https://www.facebook.com/NullRoute237', // e.g. "https://facebook.com/andytechsolutions"
   instagram: '', // e.g. "https://instagram.com/andytechsolutions"
-  tiktok: '', // e.g. "https://tiktok.com/@andytechsolutions"
+  tiktok: 'https://www.tiktok.com/@unpredictable2304?_r=1&_t=ZS-99qYu4K8QwU', // e.g. "https://tiktok.com/@andytechsolutions"
 }
 
 export const contact = {
