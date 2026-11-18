@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import Logo from './Logo'
 import SocialLinks from './SocialLinks'
@@ -43,39 +44,39 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="font-mono text-xs uppercase tracking-wider text-paper/50">
+          <h2 className="font-mono text-xs uppercase tracking-wider text-paper/50">
             {t('footer_navigate')}
-          </h3>
+          </h2>
           <ul className="mt-4 flex flex-col gap-2.5">
             {navLinks.map((link) => (
               <li key={link.to}>
-                <a href={link.to} className="text-sm text-paper/80 hover:text-white">
+                <Link to={link.to} className="text-sm text-paper/80 hover:text-white">
                   {t(link.labelKey)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="font-mono text-xs uppercase tracking-wider text-paper/50">
+          <h2 className="font-mono text-xs uppercase tracking-wider text-paper/50">
             {t('footer_services')}
-          </h3>
+          </h2>
           <ul className="mt-4 flex flex-col gap-2.5">
             {services.map((s) => (
               <li key={s.id}>
-                <a href={`/services#${s.id}`} className="text-sm text-paper/80 hover:text-white">
+                <Link to={`/services#${s.id}`} className="text-sm text-paper/80 hover:text-white">
                   {pick(s.name.en, s.name.fr)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="font-mono text-xs uppercase tracking-wider text-paper/50">
+          <h2 className="font-mono text-xs uppercase tracking-wider text-paper/50">
             {t('footer_contact')}
-          </h3>
+          </h2>
           <ul className="mt-4 flex flex-col gap-3">
             <ContactLine icon={Phone} value={contact.phone} href={contact.phone ? `tel:${contact.phone.replace(/\s+/g, '')}` : null} label={t('common_call')} />
             <ContactLine icon={WhatsAppIcon} value={contact.whatsapp} href={whatsappHref} label={t('common_whatsapp')} />

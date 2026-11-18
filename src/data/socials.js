@@ -3,7 +3,7 @@
 export const socials = {
   facebook: 'https://www.facebook.com/NullRoute237', // e.g. "https://facebook.com/andytechsolutions"
   instagram: '', // e.g. "https://instagram.com/andytechsolutions"
-  tiktok: 'https://www.tiktok.com/@unpredictable2304?_r=1&_t=ZS-99qYu4K8QwU', // e.g. "https://tiktok.com/@andytechsolutions"
+  tiktok: 'https://www.tiktok.com/@unpredictable2304', // e.g. "https://tiktok.com/@andytechsolutions"
 }
 
 export const contact = {
@@ -15,3 +15,12 @@ export const contact = {
 }
 
 export const PLACEHOLDER = '[Add real value]'
+
+// Where the map pin points. This is Molyko Omnisport Stadium, Buea (the landmark
+// the service area is named after). When you have a shop or an exact spot, open it
+// in Google Maps, right-click the pin, click the coordinates to copy them, and paste
+// the two numbers here (latitude first, then longitude).
+export const mapLocation = {
+  lat: 4.16129,
+  lon: 9.2794,
+}

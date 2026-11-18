@@ -84,9 +84,18 @@ src/
   submission.
 - Fonts (Space Grotesk, Inter, JetBrains Mono) are self-hosted via
   `@fontsource`, so the site has no external runtime font dependency.
-- Before launch, replace `https://www.example.com` in
-  `public/robots.txt` and `public/sitemap.xml` with the real domain, and
-  add the `/blog` route and post URLs to the sitemap.
+- The site address used in link previews, `robots.txt` and `sitemap.xml` is filled in
+  automatically at build time. On Vercel nothing needs doing. Once you connect a custom
+  domain, add an environment variable `SITE_URL` (for example `https://andytechsolutions.com`)
+  in the Vercel project settings and redeploy.
+- Link-preview image: `public/og-image.png` (1200x630). Home-screen icons: `public/icon-192.png`,
+  `public/icon-512.png`, `public/apple-touch-icon.png`.
+- Business details for Google live in the JSON-LD block in `index.html`. If the phone, email,
+  address, hours, or social links change in `src/data/socials.js`, update that block too.
+
+- The map section (Home and Contact pages) is `src/components/LocationMap.jsx`. The pin position is
+  `mapLocation` in `src/data/socials.js`. It currently marks Molyko Omnisport Stadium; replace the two
+  numbers with your exact shop coordinates when you have them.
 
 ## Deploying
 

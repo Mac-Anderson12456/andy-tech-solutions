@@ -25,7 +25,7 @@ export default function SEO({ title, description = DEFAULT_DESCRIPTION, path = '
     setMeta('og:description', description, 'property')
     setMeta('og:type', 'website', 'property')
     setMeta('og:site_name', SITE_NAME, 'property')
-    setMeta('og:url', path, 'property')
+    setMeta('og:url', `${window.location.origin}${path}`, 'property')
     setMeta('twitter:card', 'summary_large_image')
     setMeta('twitter:title', fullTitle)
     setMeta('twitter:description', description)

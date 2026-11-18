@@ -8,7 +8,7 @@ export default function LanguageSwitch({ className = '' }) {
     <button
       type="button"
       onClick={toggleLanguage}
-      aria-label={t('lang_switchTo')}
+      aria-label={`EN / FR: ${t('lang_switchTo')}`}
       title={t('lang_switchTo')}
       className={`inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-3 py-1.5 font-mono text-xs font-medium text-slate transition-colors hover:border-ink/30 hover:text-ink ${className}`}
     >

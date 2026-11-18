@@ -4,6 +4,8 @@ import { Phone, Mail, MapPin, Clock, CheckCircle2 } from 'lucide-react'
 import SEO from '../components/SEO'
 import StatusPill from '../components/StatusPill'
 import { WhatsAppIcon } from '../components/icons/BrandIcons'
+import SocialLinks from '../components/SocialLinks'
+import LocationMap from '../components/LocationMap'
 import { contact } from '../data/socials'
 import { useLanguage } from '../i18n/LanguageContext'
 
@@ -518,9 +520,12 @@ export default function Contact() {
           <div className="rounded-2xl bg-ink p-6 text-paper">
             <h3 className="font-display font-semibold">{c.followTitle}</h3>
             <p className="mt-1 text-sm text-paper/70">{c.followText}</p>
+            <SocialLinks dark className="mt-4" />
           </div>
         </aside>
       </section>
+
+      <LocationMap />
     </>
   )
 }

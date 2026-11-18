@@ -7,6 +7,8 @@ import NetworkDiagram from '../components/NetworkDiagram'
 import ServiceCard from '../components/ServiceCard'
 import ProjectCard from '../components/ProjectCard'
 import Testimonials from '../components/Testimonials'
+import SloganBand from '../components/SloganBand'
+import LocationMap from '../components/LocationMap'
 import { services } from '../data/services'
 import { projects } from '../data/projects'
 import { images } from '../data/images'
@@ -201,6 +203,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* LOGO + SLOGAN */}
+      <SloganBand />
+
       {/* WHAT / WHO / WHY / HOW */}
       <section className="border-b border-ink/8 bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 md:grid-cols-4">
@@ -293,6 +298,9 @@ export default function Home() {
 
       {/* TESTIMONIALS */}
       <Testimonials />
+
+      {/* LOCATION */}
+      <LocationMap />
 
       {/* CTA BAND */}
       <section className="bg-ink">

@@ -1,21 +1,25 @@
 import { Link } from 'react-router-dom'
 
-export function LogoMark({ className = 'w-9 h-9' }) {
+// The Andy TecH Solutions logo: an "A" with a signal ring and two signal arcs.
+// variant="navy" is for light backgrounds, variant="white" for dark ones.
+// Master vector copies live in public/brand/.
+export function LogoMark({ className = 'h-10', variant = 'navy' }) {
+  const letter = variant === 'white' ? '#FFFFFF' : '#0F253D'
   return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
-      <rect width="40" height="40" rx="10" fill="#0b1220" />
-      {/* network topology glyph: three nodes forming an "A" apex */}
-      <path
-        d="M20 10 L11 29 M20 10 L29 29 M14.5 22 H25.5"
-        stroke="#ff7a29"
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      <circle cx="20" cy="10" r="2.6" fill="#16c784" />
-      <circle cx="11" cy="29" r="2.2" fill="#2f6fed" />
-      <circle cx="29" cy="29" r="2.2" fill="#2f6fed" />
+    <svg
+      viewBox="146 65 908 1145"
+      className={`w-auto ${className}`}
+      style={{ aspectRatio: '908 / 1145' }}
+      aria-hidden="true"
+      focusable="false"
+    >
+      <g fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M383 191A324 324 0 0 1 816 191" stroke="#FE6C19" strokeWidth="66" />
+        <path d="M479 298A178 178 0 0 1 720 298" stroke="#FE6C19" strokeWidth="66" />
+        <path d="M228 1128L600 435L972 1128" stroke={letter} strokeWidth="144" />
+      </g>
+      <circle cx="600" cy="875" r="120" fill="#FE6C19" />
+      <circle cx="600" cy="875" r="45" fill={letter} />
     </svg>
   )
 }
@@ -24,10 +28,10 @@ export default function Logo({ withText = true, className = '', dark = false }) 
   return (
     <Link
       to="/"
-      className={`inline-flex items-center gap-2.5 group ${className}`}
+      className={`inline-flex items-center gap-3 group ${className}`}
       aria-label="Andy TecH Solutions - Home"
     >
-      <LogoMark className="w-9 h-9 shrink-0" />
+      <LogoMark className="h-11 shrink-0" variant={dark ? 'white' : 'navy'} />
       {withText && (
         <span
           className={`font-display font-semibold text-lg leading-none tracking-tight ${
